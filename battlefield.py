@@ -1,7 +1,10 @@
+from robot import Robot
+
+
 class Battlefield:
     def __init__(self):
-        robot = ''
-        dinosaur = ''
+        self.robot = ''
+        self.dinosaur = ''
     
     def run_game(self):
         pass
