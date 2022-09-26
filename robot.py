@@ -1,5 +1,5 @@
 from weapon import weapon
-
+from dinosaur import Dinosaur
 
 class Robot:
     def __init__(self, name):
@@ -8,7 +8,5 @@ class Robot:
         self.active_weapon = weapon
         print(name)
     
-    def attack(self, Dinosaur):
-        pass
-
-Robot('Repentance')
+    def attack(self, dinosaur):
+        self.dinosaur = Dinosaur
