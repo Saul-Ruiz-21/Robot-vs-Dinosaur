@@ -39,10 +39,3 @@ class Battlefield:
             print(f'The winner is {self.dinosaur.name}')
         elif self.dinosaur.health <= 0:
             print(f'The winner of this battle is {self.robot.name}')
-
-
-#        while Robot.health != 0 or Dinosaur.health != 0:
-#            if Robot.health != 0:
-#                Robot.attack
-#                print(f'{Robot.name("Repentance")} attacks {Dinosaur.name("Abominable Giga")} with his weapon {weapon.weapon_name} dealing {weapon.attack_power} damage.')
-#                print(f'this leaves {Dinosaur.name("Abominable Giga")} with {Dinosaur.health} health.')
