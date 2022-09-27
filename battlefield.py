@@ -41,13 +41,6 @@ class Battlefield:
             print(f'The winner of this battle is {self.robot.name}')
 
 
-
-def run_games():
-    run = Battlefield()
-    run.run_game()
-
-run_games()
-
 #        while Robot.health != 0 or Dinosaur.health != 0:
 #            if Robot.health != 0:
 #                Robot.attack
