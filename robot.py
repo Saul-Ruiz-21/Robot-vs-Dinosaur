@@ -7,6 +7,5 @@ class Robot:
         self.active_weapon = weapon('Disfunctional Void', 25)
     
     def attack(self, dinosaur):
-        dinosaur = dinosaur 
-        dinosaur -= self.active_weapon.attack_power
+        dinosaur.health -= self.active_weapon.attack_power
         
