@@ -17,23 +17,11 @@ class Battlefield:
         print()
         print()
 
-
     def battle_phase(self):
         while self.robot.health > 0 and self.dinosaur.health > 0:
-            if self.robot.health >= 0:
-                self.robot.attack(self.dinosaur)
-                print(f'{self.robot.name} attacks {self.dinosaur.name} with his weapon {self.robot.active_weapon.weapon_name} dealing {self.robot.active_weapon.attack_power} damage.')
-                print(f'This leaves {self.dinosaur.name} with {self.dinosaur.health} health')
-                print()
-                print()
-            if self.dinosaur.health >= 0:
-                self.dinosaur.attack(self.robot)
-                print(f'{self.dinosaur.name} pushes back and attacks {self.robot.name} dealing {self.dinosaur.attack_power} damage')
-                print(f'This leaves {self.robot.name} with {self.robot.health} health')
-                print()
-                print()
-
-
+            self.robot.attack(self.dinosaur)
+            self.dinosaur.attack(self.robot)
+               
     def display_winner(self):
         if self.robot.health <= 0:
             print(f'The winner is {self.dinosaur.name}')
